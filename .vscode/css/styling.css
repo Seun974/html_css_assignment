@@ -1,0 +1,77 @@
+.container{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 0.4fr 4fr 0.05fr;
+    grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+    grid-gap: 0.4em;
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    background: #a7ffeb;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "welcome nav login";
+}
+#welcome{
+    grid-area: welcome;
+    background: pink;
+}
+#nav {
+    grid-area: nav;
+    background: yellow;
+}
+
+#login{
+    grid-area: login;
+    background:rgb(143, 143, 201);
+}
+
+.main{
+    grid-area: main;
+    background: #84ffff;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "headline headline"
+    "headline1 headline2";
+    grid-gap: 0.4em;
+
+}
+.headline{
+    grid-area: headline;
+}
+.headline1{
+    grid-area: headline1;
+}
+
+.headline2{
+    grid-area: headline2;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background: #848484;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    background: #1de9b6;
+    text-align: center;
+}
+.containerlogin{
+    grid-template-rows: 0.4fr 4fr 0.05fr;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+    "loginheader"
+    "loginbody"
+    "footerlogin";
+    grid-gap: 0.4em;
+}
+
